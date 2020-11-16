@@ -1,0 +1,20 @@
+{
+    "title": "website comment",
+    "description": "Create comment box so that visitors leave comments",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "number"
+        },
+        "name": {
+            "type": "string"
+        },
+        "comment": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "name",
+        "comment"
+    ]
+}

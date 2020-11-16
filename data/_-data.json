@@ -1,0 +1,15 @@
+{
+    "nextId": 3,
+    "comments": [
+        {
+            "id": 1,
+            "name": "Sayed",
+            "comment": "I'm also interested in knowing the answer for the above questions!"
+        },
+        {
+            "id": 2,
+            "name": "Jhon",
+            "comment": "I would love to have the answers as well!"
+        }
+    ]
+}

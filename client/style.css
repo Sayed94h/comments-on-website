@@ -49,6 +49,12 @@ section.section-comment form button {
 	border-radius: 2%;
 }
 
+div#root {
+	text-align: center;
+	padding: 2%;
+	font-size: 1.5vw;
+}
+
 footer {
 	background-color: #44f;
 	color: white;
