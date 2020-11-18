@@ -40,13 +40,66 @@ section.section-comment form input {
 	border-radius: 2%;
 }
 
-section.section-comment form button {
+section.section-comment form input[type="button"] {
 	padding: 1.3%;
 	margin-left: 6%;
 	width: 45%;
 	background-color: #eff;
 	border: 1px white solid;
 	border-radius: 2%;
+}
+/*
+	style for rendered comments
+*/
+section#comment-box {
+	width: 50%;
+	margin-left: 25%;
+}
+section#comment-box section.commentSection {
+	display: flex;
+	flex-direction: row;
+
+	align-items: center;
+}
+section#comment-box section section span p {
+	background-color: #eff;
+	padding: 2%;
+	width: 580px;
+}
+section#comment-box section section span span {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+section#comment-box section section span span input[type="button"] {
+	padding: 2%;
+	font-weight: bold;
+	font-size: 15px;
+	cursor: pointer;
+	margin-left: 2%;
+}
+section#comment-box section section span span input[type="text"] {
+	background-color: #eff;
+	padding: 2%;
+	width: 420px;
+}
+
+section#comment-box section.commentSection span.button-span {
+	margin-left: 3%;
+}
+button.editDeleteButton {
+	font-weight: bold;
+	font-size: 25px;
+	padding-top: 2%;
+}
+
+section.edit-delete-section {
+	background-color: rgb(126, 177, 160);
+	padding: 18%;
+	width: 100%;
+	border-radius: 1vw;
 }
 
 div#root {
