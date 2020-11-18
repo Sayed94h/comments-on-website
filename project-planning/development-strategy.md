@@ -84,3 +84,21 @@ This part is created in a branch called `website-interactions` and merged into t
 - Created PR, issues
 
 ### Task ...
+
+## 4. Final-touch
+
+**As a user I want to see a web page when the web page is loaded**
+
+This part is created in a branch called `final-touch` and merged into the branch `master` when it was done
+
+### Task A: HTML
+
+- Nothing
+
+### Task C: CSS
+
+- Made it a little responsive
+
+### Task D: JavaScript
+
+- Added data validation

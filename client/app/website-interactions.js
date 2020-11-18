@@ -105,6 +105,11 @@ const readRender = async () => {
  * Save comments in the database(JSON file)
  */
 const saveComments = async () => {
+	// stop the program if the inputs are empty
+	if (userComments.value === "" || userName.value === "") {
+		alert("Please Enter your comment and your name");
+		return;
+	}
 	const res = await fetch(`/api/comments`, {
 		method: "POST",
 		body: JSON.stringify({
