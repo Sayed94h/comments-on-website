@@ -26,6 +26,34 @@ const controllers = {
 			res.send(parsedData.comments);
 		});
 	},
+	displayOneComment: async (req, res, next) => {
+		let commentId = Number(req.params.id);
+		await fs.readFile(DATA_PATH, "UTF-8", (err, data) => {
+			if (err) {
+				console.error("Error from the read file display comments: ", err);
+				res.json({
+					message: "There are some problems to read and render the comments",
+				});
+				return;
+			}
+			// if there is no error
+			let parsedData = JSON.parse(data);
+			// find the commend with the given id
+			let sendComment = parsedData.comments.filter((item) => {
+				if (item.id === commentId) {
+					return item;
+				}
+			});
+			// there is a comment with the given ID
+			if (sendComment.length > 0) {
+				res.json(sendComment[0]);
+			} else {
+				res
+					.status(404)
+					.send(`There is no comment with the given id: ${commentId}`);
+			}
+		});
+	},
 	saveComments: async (req, res, next) => {
 		// get users comments and names
 		let comment = req.body.comment;

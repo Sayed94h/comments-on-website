@@ -102,3 +102,4 @@ This part is created in a branch called `final-touch` and merged into the branch
 ### Task D: JavaScript
 
 - Added data validation
+- Added one more route for getting a comment with an id via parameter
