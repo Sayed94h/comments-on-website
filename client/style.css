@@ -11,8 +11,8 @@ header {
 }
 
 main article {
-	width: 50%;
-	margin-left: 25%;
+	width: 70%;
+	margin-left: 15%;
 	background-color: rgb(158, 85, 115);
 	padding: 1%;
 	border-radius: 1vw;
@@ -21,8 +21,8 @@ main article {
 }
 
 section.section-comment {
-	width: 50%;
-	margin-left: 25%;
+	width: 70%;
+	margin-left: 15%;
 	margin-top: 3%;
 	margin-bottom: 3%;
 }
@@ -52,19 +52,19 @@ section.section-comment form input[type="button"] {
 	style for rendered comments
 */
 section#comment-box {
-	width: 50%;
-	margin-left: 25%;
+	width: 70%;
+	margin-left: 15%;
 }
 section#comment-box section.commentSection {
 	display: flex;
 	flex-direction: row;
-
 	align-items: center;
 }
 section#comment-box section section span p {
 	background-color: #eff;
 	padding: 2%;
-	width: 580px;
+	width: 65vw;
+	border-radius: 1vw;
 }
 section#comment-box section section span span {
 	display: flex;
@@ -83,16 +83,19 @@ section#comment-box section section span span input[type="button"] {
 section#comment-box section section span span input[type="text"] {
 	background-color: #eff;
 	padding: 2%;
-	width: 420px;
+	width: 60vw;
 }
 
 section#comment-box section.commentSection span.button-span {
-	margin-left: 3%;
+	margin-left: 1vw;
 }
 button.editDeleteButton {
 	font-weight: bold;
 	font-size: 25px;
-	padding-top: 2%;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	border-radius: 0.6vw;
+	cursor: pointer;
 }
 
 section.edit-delete-section {
@@ -105,7 +108,7 @@ section.edit-delete-section {
 div#root {
 	text-align: center;
 	padding: 2%;
-	font-size: 1.5vw;
+	font-size: 30px;
 }
 
 footer {
@@ -113,4 +116,6 @@ footer {
 	color: white;
 	padding: 3%;
 	text-align: center;
+	width: 100%;
+	margin-top: 9vh;
 }

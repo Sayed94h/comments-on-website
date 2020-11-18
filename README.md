@@ -19,5 +19,8 @@
 
 If you would like to know the flow of this project, have a loot at our development-strategy [here](./project-planning/development-strategy.md)
 
-Please visit the working demo of this project [here](https://_.herokuapp.com) and please leave us your great thoughts about our website
+Please visit the working demo of this project [here](https://cs-concepts.herokuapp.com/)
+
+Please leave us your great thoughts about our website
+
 Thank you

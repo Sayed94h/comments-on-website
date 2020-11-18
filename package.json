@@ -1,5 +1,5 @@
 {
-	"name": "refactored-dynamic-example",
+	"name": "cs-concepts",
 	"version": "1.0.0",
 	"description": "We are going to allow our website visitors to comment on our website",
 	"main": "index.js",

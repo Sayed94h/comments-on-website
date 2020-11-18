@@ -45,6 +45,22 @@ const controllers = {
 				name: name,
 				comment: comment,
 			};
+			// check if users data is valid based on our schema
+			let isValid = tv4.validate(toSave, SCHEMA);
+			// if it is not valid, then let users know what wrong is about their inputs
+			if (!isValid) {
+				const error = tv4.error;
+				console.error("Error from validation: ", error);
+				res.status(400).json({
+					error: {
+						message: error.message,
+						dataPath: error.dataPath,
+					},
+				});
+				return;
+			}
+			// if users inputs are valid then do the following
+
 			parsedData.nextId++;
 			// push or send the users data to the database
 			parsedData.comments.push(toSave);
