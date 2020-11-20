@@ -103,3 +103,6 @@ This part is created in a branch called `final-touch` and merged into the branch
 
 - Added data validation
 - Added one more route for getting a comment with an id via parameter
+- Added two @media queries to make the web page responsive
+- Changed some css units to make it responsive
+- Tested it out
