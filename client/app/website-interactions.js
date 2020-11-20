@@ -34,7 +34,7 @@ const readRender = async () => {
 	for (let i = 0; i < data.length; i++) {
 		let mainSection = document.createElement("section");
 		let profileSection = document.createElement("section");
-
+		profileSection.className = "section-profile";
 		let profileIcon = document.createElement("span");
 		profileIcon.textContent = " 👤  ";
 		let profileName = document.createElement("span");
@@ -52,8 +52,8 @@ const readRender = async () => {
 		commentItself.textContent = ` ${data[i].comment}`;
 		// for editing comments
 		let editSpan = document.createElement("span");
-		let editComment = document.createElement("input");
-		editComment.type = "text";
+		editSpan.className = "editSpan";
+		let editComment = document.createElement("textarea");
 		editComment.value = ` ${data[i].comment}`;
 		let saveButton = document.createElement("input");
 		saveButton.type = "button";
@@ -74,12 +74,21 @@ const readRender = async () => {
 		// this element should be displayed when users click on the button
 		let editDeleteSpan = document.createElement("span");
 		// display edit delete button
+		let changeStatus = false;
 		buttonItself.onclick = function () {
-			editDeleteSpan.appendChild(editDeleteSection);
-			commentSection.appendChild(editDeleteSpan);
+			changeStatus = !changeStatus;
+			if (changeStatus) {
+				editDeleteSpan.style.display = "initial";
+				editDeleteSpan.appendChild(editDeleteSection);
+				commentSection.appendChild(editDeleteSpan);
+			} else {
+				editDeleteSpan.style.display = "none";
+			}
+
 			// display the edit box and not display the comment box, run the edit function
 			editButton.onclick = function () {
 				commentItself.style.display = "none";
+				editDeleteSpan.style.display = "none";
 				commentSpan.appendChild(editSpan);
 				saveButton.onclick = function () {
 					let name = `${data[i].name}`;
